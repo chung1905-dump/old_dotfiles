@@ -112,10 +112,6 @@ bindsym $mod+s workspace $subl3
 #note: conflict with "change container layout - stacking"
 # disbled "change container layout - stacking"
 
-set $terminal "Terminal"
-assign [class="Xfce4-terminal"] $terminal
-bindsym $mod+t workspace $terminal
-
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
