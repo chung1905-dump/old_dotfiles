@@ -103,6 +103,8 @@ set $chromium "Chromium"
 assign [class="Chroium"] $chromium
 bindsym $mod+c workspace $chromium
 bindsym $mod+Shift+c move container to workspace $chromium
+#note: conflict with "reload"
+# disbled "reload"
 
 set $subl3 "Sublime Text"
 assign [class="Subl3"] $subl3
@@ -139,7 +141,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 0
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+# bindsym $mod+Shift+c reload # Disabled - conflict with move containt to workspace $chromium
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
