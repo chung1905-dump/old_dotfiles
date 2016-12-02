@@ -100,7 +100,7 @@ bindsym $mod+a focus parent
 # binsym $mod+Shift+AnyKey move container to workspace $var
 
 set $chromium "Chromium"
-assign [class="Chroium"] $chromium
+assign [class="Chromium"] $chromium
 bindsym $mod+c workspace $chromium
 bindsym $mod+Shift+c move container to workspace $chromium
 #note: conflict with "reload"
@@ -151,16 +151,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym l resize shrink height 5 px or 5 ppt
+        bindsym semicolon resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -169,19 +169,42 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Color scheme * #2f343f
+
+set $bg-color            #454649
+set $inactive-bg-color   #454649
+set $text-color          #f3f4f5
+set $inactive-text-color #676E7D
+set $urgent-bg-color     #E53935
+
+# window colors
+#                       border              background         text                 indicator
+client.focused          $bg-color           $bg-color          $text-color          #00ff00
+client.unfocused        $iancative-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $iancative-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        status_command i3blocks
+        colors {
+            background $bg-color
+                separator #757575
+            #                  border             background         text
+            focused_workspace  $bg-color          $bg-color          $text-color
+            inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+            urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+        }
 }
 
 # i3lock
-bindsym Control+Mod1+L exec i3lock
+bindsym Control+Mod1+L exec ~/.config/i3/i3lock.sh
 
 # Autostarting
-exec_always --no-startup-id feh --bg-scale ~/Pictures/.wallpaper # wallpaper
+exec_always --no-startup-id ~/.config/i3/set_wallpaper.sh # wallpaper
 exec_always --no-startup-id ibus-daemon -drx # ibus
-exec chromium
+exec --no-startup-id nm-applet
 
 # Brightness controller
 bindsym XF86MonBrightnessUp exec xbacklight +10
@@ -198,3 +221,6 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/'
 # Border
 new_window normal 0 px
 new_float normal 0 px
+
+# enable floating window for Viewnior - image viewer
+for_window [class="Viewnior"] floating enable
