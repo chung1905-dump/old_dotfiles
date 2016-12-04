@@ -41,8 +41,7 @@ bindsym Mod1+F4 kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-#bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 400 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display Bold 15"
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -fn 'System San Francisco Display-10'"
 
 # change focus
 bindsym $mod+j focus left
@@ -171,8 +170,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Color scheme
-set $bg-color            #454649
-set $bg-color2           #2f343f
+set $bg-color            #383C4A
 set $inactive-bg-color   #454649
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
@@ -205,12 +203,13 @@ bindsym Control+Mod1+L exec ~/.config/i3/i3lock.sh
 
 # Autostarting
 exec --no-startup-id ~/.config/i3/set_wallpaper.sh # wallpaper
-exec_always --no-startup-id ibus-daemon -drx # ibus
+exec --no-startup-id ibus-daemon -drx # ibus
 exec --no-startup-id nm-applet
+exec --no-startup-id xrdb ~/.Xrescources
 
 # Brightness controller
-bindsym XF86MonBrightnessUp exec xbacklight +3
-bindsym XF86MonBrightnessDown exec xbacklight -3
+bindsym XF86MonBrightnessUp exec xbacklight +4
+bindsym XF86MonBrightnessDown exec xbacklight -4
 
 # Audio controller
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5%
@@ -224,5 +223,5 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/'
 new_window normal 0 px
 new_float normal 0 px
 
-# enable floating window for Viewnior - image viewer
-for_window [class="Viewnior"] floating enable
+# enable floating window for feh - image viewer
+for_window [class="feh"] floating enable

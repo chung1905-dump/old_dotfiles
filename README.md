@@ -13,3 +13,4 @@ no border but title
 enable floating window for Viewnior - image viewer  
 i3bar use i3blocks istead of i3status  
 custom color scheme: i3 & i3bar  
+use j4-dmenu-desktop
