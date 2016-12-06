@@ -142,6 +142,7 @@ bindsym $mod+Shift+0 move container to workspace 0
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Control+P exec systemctl poweroff
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -171,7 +172,7 @@ bindsym $mod+r mode "resize"
 
 # Color scheme
 set $bg-color            #383C4A
-set $inactive-bg-color   #454649
+set $inactive-bg-color   #383C4A
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
@@ -204,7 +205,7 @@ bindsym Control+Mod1+L exec ~/.config/i3/i3lock.sh
 # Autostarting
 exec --no-startup-id ~/.config/i3/set_wallpaper.sh # wallpaper
 exec --no-startup-id ibus-daemon -drx # ibus
-exec --no-startup-id nm-applet
+exec --no-startup-id killall nm-applet; nohup nm-applet &
 exec --no-startup-id xrdb ~/.Xrescources
 
 # Brightness controller
