@@ -36,7 +36,7 @@ function git_time_since_commit() {
                     echo "-${SUB_MONTHS}m"
                 fi
             elif [ "$DAYS" -gt 30 ]; then
-                echo -n "${MONTHS}y"
+                echo -n "${MONTHS}m"
                 if [ "$SUB_DAYS" != 0 ]; then
                     echo "-${SUB_DAYS}d"
                 fi
