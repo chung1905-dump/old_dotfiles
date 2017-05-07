@@ -1,0 +1,103 @@
+cd ../magento/magento23/app/code/Magenest/Stripe
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+cd
+cd
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+cd
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+clear
+clear
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+autoload -Uz promptinit\
+promptinit\
+
+prompt -l
+prompt -p
+cd ../magento/magento23/app/code/Magenest/AuthorizenetCim
+sudo pacman -S tlp
+gedit
+tlp start
+sudo tlp start
+sudo systemctl disable systemd-rfkill
+sudo systemctl status systemd-rfkill
+sudo systemctl status tlp
+sudo systemctl status tlp-sleep
+sudo systemctl stop systemd-rfkill
+sudo systemctl start tlp
+sudo systemctl start tlp-sleep
+sudo systemctl enable tlp-sleep
+sudo systemctl enable tlp
+tlp start
+sudo tlp start
+tlp-stat
+sudo tlp-stat
+sudo pacman -S smartmontools
+smartmontools
+sudo tlp-stat -b
+sudo tlp-stat -c
+sudo tlp-stat -d
+cd Desktop
+cd..
+cd ..
+ls
+cd Downloads
+ls
+cd old
+ls
+cd sublime-text-dev/
+git pull
+makepkg -si
+sudo pacman -S gksu
+paccache -ruk0
+ls
+git status
+cd 
+clear
+paccache -rk1
+pacman -Qdtq
+pacman -Qdtqq
+subl3
+subl3
+sudo pacman -S atom
+sudo pacman -S subl3
+sudo pacman -S subl
+sudo pacman -S sublime-text
+cd Downloads
+ls
+cd Downloads
+cd Downloads
+cd Downloads
+fef
+cd Downloads
+cd ..
+ls
+cd Downloads/j4-dmenu-desktop
+cd Downloads
+cd .zsh-config
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh-config/zsh-autosuggestions\
+
+cd .zsh-config
+ls
+subl3 main.sh
+clear
+sudo pacman -S xterm
+cd D
+sudo pacman -S urxvt
+sudo pacman -S urxvt-unicode
+sudo pacman -S rxvt-unicode
+sudo pacman -Rsn xterm
+sudo pacman -Rsn rxvt-unicode
+paccache -ruk0
+paccache -rk1
+pacman -Qdtqq
+sudo pacman -S xfce4-terminal
+sudo pacman -Rsn xfce4-terminal
+pactree steam
