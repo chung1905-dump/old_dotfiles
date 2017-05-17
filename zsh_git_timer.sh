@@ -31,12 +31,12 @@ function git_time_since_commit() {
             SUB_MONTHS=$((MONTHS % 12))
 
             if [ "$MONTHS" -gt 12 ]; then
-                echo -n "${YEARS}y"
+                echo -n "${YEARS}Y"
                 if [ "$SUB_MONTHS" != 0 ]; then
-                    echo "-${SUB_MONTHS}m"
+                    echo "-${SUB_MONTHS}M"
                 fi
             elif [ "$DAYS" -gt 30 ]; then
-                echo -n "${MONTHS}m"
+                echo -n "${MONTHS}M"
                 if [ "$SUB_DAYS" != 0 ]; then
                     echo "-${SUB_DAYS}d"
                 fi
