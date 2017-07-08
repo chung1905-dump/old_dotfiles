@@ -1,0 +1,4 @@
+alias upgrade='sudo bin/magento setup:upgrade'
+alias 777='sudo chmod -R 777 var pub'
+alias clean='sudo bin/magento cache:clean'
+alias flush='sudo bin/magento cache:flush'
