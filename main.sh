@@ -2,6 +2,7 @@ setopt PROMPT_SUBST;
 
 source ~/.zsh-config/git-prompt.sh
 source ~/.zsh-config/zsh_git_timer.sh
+source ~/.zsh-config/aliases.sh
 
 SAVEHIST=100
 HISTFILE=~/.zsh-config/zsh_history
