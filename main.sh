@@ -3,6 +3,7 @@ setopt PROMPT_SUBST;
 source ~/.zsh-config/git-prompt.sh
 source ~/.zsh-config/zsh_git_timer.sh
 source ~/.zsh-config/aliases
+source ~/.zsh-config/bindkey
 
 SAVEHIST=100
 HISTFILE=~/.zsh-config/zsh_history
@@ -38,6 +39,4 @@ precmd() {
 	__git_ps1 "%c" " "
 }
 
-bindkey "${terminfo[khome]}" beginning-of-line
-bindkey "${terminfo[kend]}" end-of-line
-
+unsetopt MULTIBYTE
