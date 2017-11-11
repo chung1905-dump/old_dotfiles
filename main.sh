@@ -37,3 +37,7 @@ alias ls='ls --color=auto'
 precmd() { 
 	__git_ps1 "%c" " "
 }
+
+bindkey "${terminfo[khome]}" beginning-of-line
+bindkey "${terminfo[kend]}" end-of-line
+
