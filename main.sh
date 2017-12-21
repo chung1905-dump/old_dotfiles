@@ -4,7 +4,7 @@ source ~/.zsh-config/git-prompt.sh
 source ~/.zsh-config/zsh_git_timer.sh
 source ~/.zsh-config/aliases
 source ~/.zsh-config/bindkey
-source ~/.zsh-config/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source ~/.zsh-config/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 SAVEHIST=100
 HISTFILE=~/.zsh-config/zsh_history
