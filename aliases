@@ -1,5 +1,6 @@
 alias upgrade='php bin/magento setup:upgrade'
 alias clean='php bin/magento cache:clean'
-alias flush='php bin/magento cache:flush'
+alias cc='php bin/magento cache:clean'
+alias cf='php bin/magento cache:flush'
 alias php71='sudo a2enmod php7.1 && sudo a2dismod php7.0 && sudo service apache2 restart && sudo update-alternatives --set php /usr/bin/php7.1 && sudo update-alternatives --set phpize /usr/bin/phpize7.1'
 alias php70='sudo a2enmod php7.0 && sudo a2dismod php7.1 && sudo service apache2 restart && sudo update-alternatives --set php /usr/bin/php7.0 && sudo update-alternatives --set phpize /usr/bin/phpize7.0'

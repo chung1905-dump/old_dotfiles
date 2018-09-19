@@ -6,7 +6,7 @@ source ~/.zsh-config/aliases
 source ~/.zsh-config/bindkey
 source ~/.zsh-config/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-SAVEHIST=100
+SAVEHIST=500
 HISTFILE=~/.zsh-config/zsh_history
 
 # NC='\033[0m' # No Color
