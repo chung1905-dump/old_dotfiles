@@ -1,5 +1,8 @@
 setopt PROMPT_SUBST;
 
+autoload -Uz compinit
+compinit
+
 source ~/.zsh-config/git-prompt.sh
 source ~/.zsh-config/zsh_git_timer.sh
 source ~/.zsh-config/aliases
