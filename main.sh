@@ -39,7 +39,7 @@ RPROMPT='$(git_time_since_commit)'
 alias ls='ls --color=auto'
 
 # %d, %~ for full dir, %c for short
-precmd() { 
+precmd() {
 	__git_ps1 "%c" " "
 }
 
