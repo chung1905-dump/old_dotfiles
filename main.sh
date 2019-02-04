@@ -9,8 +9,9 @@ source ~/.zsh-config/aliases
 source ~/.zsh-config/bindkey
 source ~/.zsh-config/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-SAVEHIST=500
 HISTFILE=~/.zsh-config/zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
 
 # NC='\033[0m' # No Color
 # BLACK='\033[0;30m'
