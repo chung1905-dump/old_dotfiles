@@ -1,4 +1,4 @@
-alias ls="ls --color -F"
+alias ls="ls --color"
 alias ll="ls --color -lh"
 alias spm="sudo pacman"
 alias gr="gvim --remote-silent"
