@@ -1,3 +1,9 @@
+alias ls="ls --color -F"
+alias ll="ls --color -lh"
+alias spm="sudo pacman"
+alias gr="gvim --remote-silent"
+alias vr="vim --remote-silent"
+
 alias upgrade='php bin/magento setup:upgrade'
 alias clean='php bin/magento cache:clean'
 alias cc='php bin/magento cache:clean'
